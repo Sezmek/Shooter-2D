@@ -15,6 +15,11 @@ public class EnemyPatrol : MonoBehaviour
     private void Start()
     {
         rb.velocity = Vector2.left * speed;
+
+    }
+    public void SetVelocity()
+    {
+        rb.velocity = Vector2.zero;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

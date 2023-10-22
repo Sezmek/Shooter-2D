@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -727262863, guid: 07eab994cda09e14485aa08961a9abd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.29, y: 0.11}
@@ -140,10 +140,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3782114718577060390}
   - component: {fileID: 7193511540593355175}
-  - component: {fileID: 3559798821460170305}
+  - component: {fileID: -9180408200727881350}
   m_Layer: 0
-  m_Name: Bullet
-  m_TagString: Untagged
+  m_Name: EnemyBulet
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,7 +162,7 @@ Transform:
   m_Children:
   - {fileID: 3196713214470837463}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &7193511540593355175
 Rigidbody2D:
@@ -191,7 +191,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &3559798821460170305
+--- !u!114 &-9180408200727881350
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,8 +200,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1997215589485656381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0286c45b2fc8cfa4e8e184526463ce5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 634f29f6da4ded64d99ad0ad2ee479ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  attack: 5
+  attack: 1

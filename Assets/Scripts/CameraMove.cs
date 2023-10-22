@@ -14,11 +14,14 @@ public class CameraMove : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        float targetPosX = target.position.x + offset.x;
-        if (targetPosX > transform.position.x)
+        if (target != null)
         {
-            Vector3 pos = new Vector3(targetPosX, transform.position.y, transform.position.z);
-            transform.position = pos;
+            float targetPosX = target.position.x + offset.x;
+            if (targetPosX > transform.position.x)
+            {
+                Vector3 pos = new Vector3(targetPosX, transform.position.y, transform.position.z);
+                transform.position = pos;
+            }
         }
     }
 }
