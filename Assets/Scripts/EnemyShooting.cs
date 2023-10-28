@@ -8,9 +8,11 @@ public class EnemyShooting : MonoBehaviour
     [SerializeField] Transform aim;
     [SerializeField] float RepeatTime = 2;
     [SerializeField] int attackDMG = 1;
+    [SerializeField] ParticleSystem ps;
 
     void StartShooting()
     {
+        ps.Play();
         GameObject bullet = Instantiate(prefab, aim.position, transform.rotation);
         bullet.GetComponent<EnemyB>().SetAttack(attackDMG);
     }

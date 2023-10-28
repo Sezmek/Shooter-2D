@@ -18,7 +18,7 @@ public class EnemyB : MonoBehaviour
         Hp hp = collision.gameObject.GetComponent<Hp>();
         if (hp != null)
         {
-            hp.TakeDamage(attack);
+            hp.TakeDamage(attack, transform.position);
         }
         Destroy(gameObject);
     }
