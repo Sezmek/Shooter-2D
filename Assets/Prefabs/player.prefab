@@ -217,11 +217,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2523199210224498571, guid: 6a48cdfc509884742af7b1fd173e19cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.681909
+      value: 0.72
       objectReference: {fileID: 0}
     - target: {fileID: 2523199210224498571, guid: 6a48cdfc509884742af7b1fd173e19cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -19.11
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 2523199210224498571, guid: 6a48cdfc509884742af7b1fd173e19cb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -350,6 +350,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 5514456040279278765, guid: 725380969105014498220872f01338d8, type: 3}
+      propertyPath: ps
+      value: 
+      objectReference: {fileID: 2243205554083452282}
     - target: {fileID: 5694006487986849231, guid: 725380969105014498220872f01338d8, type: 3}
       propertyPath: m_Name
       value: Gun
@@ -397,7 +401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5389914177188502783, guid: c2b7fb9f3a0520347b48ab45f647cac4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.08
+      value: 2.143
       objectReference: {fileID: 0}
     - target: {fileID: 5389914177188502783, guid: c2b7fb9f3a0520347b48ab45f647cac4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -439,6 +443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Muzzle
       objectReference: {fileID: 0}
+    - target: {fileID: 6031391852129964554, guid: c2b7fb9f3a0520347b48ab45f647cac4, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -447,5 +455,10 @@ PrefabInstance:
 --- !u!4 &458921984657333135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5389914177188502783, guid: c2b7fb9f3a0520347b48ab45f647cac4, type: 3}
+  m_PrefabInstance: {fileID: 5517676444537816944}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2243205554083452282 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6031391852129964554, guid: c2b7fb9f3a0520347b48ab45f647cac4, type: 3}
   m_PrefabInstance: {fileID: 5517676444537816944}
   m_PrefabAsset: {fileID: 0}

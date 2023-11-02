@@ -8,7 +8,10 @@ public class FristAid : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Hp hp = collision.gameObject.GetComponent<Hp>();
-        hp.Heal(healAmount);
-        Destroy(gameObject);
+        if (hp != null )
+        {
+            hp.Heal(healAmount);
+            Destroy(gameObject);
+        }
     }
 }
